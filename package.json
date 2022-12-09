@@ -2,7 +2,7 @@
   "private": true,
   "author": "keyrote <keyrote@qq.com>",
   "scripts": {
-    "build": "max build",
+    "build": "prisma generate && max build",
     "dev": "max dev",
     "format": "prettier --cache --write .",
     "postinstall": "max setup",
@@ -13,8 +13,14 @@
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@ant-design/pro-components": "^2.0.1",
+    "@prisma/client": "^4.7.1",
+    "@types/bcryptjs": "^2.4.2",
+    "@types/jsonwebtoken": "^8.5.9",
     "@umijs/max": "^4.0.35",
-    "antd": "^5.0.0"
+    "antd": "^5.0.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^8.5.1",
+    "prisma": "^4.7.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
