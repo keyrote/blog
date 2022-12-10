@@ -19,16 +19,13 @@ export default defineConfig({
       path: '/home',
       component: './Home',
     },
-    {
-      name: '权限演示',
-      path: '/access',
-      component: './Access',
-    },
-    {
-      name: ' CRUD 示例',
-      path: '/table',
-      component: './Table',
-    },
+    { path: '/posts/create', component: 'posts/create' },
+    { path: '/login', component: 'login' },
+    { path: '/posts/:postId', component: 'posts/post' },
   ],
+  apiRoute: {
+    platform: 'vercel',
+  },
+  tailwindcss: {},
   npmClient: 'pnpm',
 });
