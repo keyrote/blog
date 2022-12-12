@@ -19,13 +19,12 @@ export default defineConfig({
       path: '/home',
       component: './Home',
     },
-    { path: '/posts/create', component: 'posts/create' },
+    { name: '创建博客', path: '/posts/create', component: 'posts/create' },
     { path: '/login', component: 'login' },
     { path: '/posts/:postId', component: 'posts/post' },
   ],
   apiRoute: {
     platform: 'vercel',
   },
-  tailwindcss: {},
   npmClient: 'pnpm',
 });
